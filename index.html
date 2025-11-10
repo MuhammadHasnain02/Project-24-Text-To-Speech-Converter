@@ -43,11 +43,11 @@
 <body class="flex flex-col h-screen justify-between">
 
     <!-- 🔸 Navbar -->
-    <nav class="bg-transparent shadow-md flex justify-center items-center py-2 space-x-2">
+    <nav class="bg-transparent shadow-md flex justify-center items-center py-3 space-x-2">
 
-        <img class="w-17 h-16 transition ease-in-out duration-500 hover:scale-105 hover:cursor-pointer" 
+        <img class="w-15 h-14 transition ease-in-out duration-500 hover:scale-105 hover:cursor-pointer" 
         src="https://cdn-icons-png.flaticon.com/512/9100/9100419.png">
-        <div class="text-[17px] font-bold">
+        <div class="text-[18px] font-bold">
             <span class="text-pink-600">Text</span> to 
             <span class="text-blue-600">Speech</span>
         </div>
@@ -56,7 +56,7 @@
 
     <!-- Main Section -->
     <section class="flex justify-center">
-        <div class="bg-white shadow-xl rounded-2xl p-6 w-[90%] max-w-2xl">
+        <div class="bg-white shadow-xl rounded-2xl p-6 w-[90%] max-w-2xl space-y-4">
 
             <!-- Textarea -->
             <textarea id="textInput"
@@ -64,28 +64,28 @@
                 placeholder="Type your text here..."></textarea>
 
             <!-- Voice Selector -->
-            <div class="mt-4">
-                <label class="text-sm text-gray-600 font-medium">Select Voice</label>
+            <div class="space-y-1">
+                <p class="text-sm text-gray-600 font-medium">Select Voice</p>
                 <select id="voiceSelect"
                     class="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
-                    <option>Loading voices...</option>
+                    <option disabled>Loading voices...</option>
                 </select>
             </div>
 
             <!-- Buttons -->
-            <div class="mt-6 flex gap-3 justify-center">
+            <div class="mt-7 flex space-x-3 justify-center">
                 <button id="playBtn"
-                    class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700">
+                    class="bg-blue-600 font-semibold text-white px-4 py-2 rounded-lg transition ease-in-out duration-500 hover:scale-105 hover:cursor-pointer">
                     <i class="fa-solid fa-play"></i> Play
                 </button>
 
                 <button id="pauseBtn"
-                    class="bg-yellow-500 text-white px-4 py-2 rounded-lg shadow hover:bg-yellow-600">
+                    class="bg-yellow-500 font-semibold text-white px-4 py-2 rounded-lg transition ease-in-out duration-400 hover:scale-105 hover:cursor-pointer">
                     <i class="fa-solid fa-pause"></i> Pause
                 </button>
 
                 <button id="stopBtn"
-                    class="bg-red-600 text-white px-4 py-2 rounded-lg shadow hover:bg-red-700">
+                    class="bg-red-600 font-semibold text-white px-4 py-2 rounded-lg transition ease-in-out duration-400 hover:scale-105 hover:cursor-pointer">
                     <i class="fa-solid fa-stop"></i> Stop
                 </button>
             </div>
