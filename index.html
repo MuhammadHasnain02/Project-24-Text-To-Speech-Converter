@@ -59,7 +59,7 @@
         <div class="bg-white shadow-xl rounded-2xl p-6 w-[90%] max-w-2xl space-y-4">
 
             <!-- Textarea -->
-            <textarea id="textInput"
+            <textarea id="textInput" contenteditable="true"
                 class="w-full h-40 border border-gray-300 rounded-lg p-3 text-gray-700 focus:ring-2 focus:ring-blue-400 focus:outline-none"
                 placeholder="Type your text here..."></textarea>
 
@@ -88,6 +88,10 @@
                     class="bg-red-600 font-semibold text-white px-4 py-2 rounded-lg transition ease-in-out duration-400 hover:scale-105 hover:cursor-pointer">
                     <i class="fa-solid fa-stop"></i> Stop
                 </button>
+            </div>
+
+            <div>
+                <span id="displayText"></span>
             </div>
 
         </div>
